@@ -12,14 +12,13 @@ export default class Bomb extends Component {
     
     render() {
         // const countdown = function() {
-              {if (this.state.secondsLeft === 0) return ('Boom!')}
-                
-                // else {
-                    //  `${this.state.secondsLeft} seconds left before I go boom!`
-              
-        //   }
-        return(
-            <div>{this.state.secondsLeft} seconds left before I go boom!</div>
-            )
+            if (this.state.secondsLeft === 0) 
+                return ('Boom!')
+            else {
+                return `${this.state.secondsLeft} seconds left before I go boom!`  
+            }
+        // return(
+        //     <div>{this.state.secondsLeft} seconds left before I go boom!</div>
+        //     )
     }
 }
