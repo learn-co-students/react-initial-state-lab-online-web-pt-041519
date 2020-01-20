@@ -19,7 +19,7 @@ export default class Bomb extends Component {
 
   render() {
     return (
-      <div>
+      <div onClick={this.decrement}>
         { this.state.secondsLeft !== 0 ? `${this.state.secondsLeft} seconds left before I go boom!` : 'Boom!' }
       </div>
     )
